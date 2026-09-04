@@ -11,8 +11,8 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: #063b88;
+    color: white;
 }
 
 
@@ -23,49 +23,68 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 8%;
+    padding: 18px 6%;
 
-    background-color: white;
+    background-color: #063b88;
+
+    color: white;
 }
 
 nav h2 {
     margin: 0;
+    font-size: 28px;
+}
+
+
+/* ---------- NAVIGATION BUTTONS ---------- */
+
+.nav-links {
+    display: flex;
+    gap: 10px;
 }
 
 .nav-links a {
-    margin-left: 25px;
+    padding: 10px 20px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
     text-decoration: none;
-    color: #222;
+    color: white;
+
     font-weight: bold;
+
+    transition: 0.2s;
 }
 
 .nav-links a:hover {
-    color: #555;
+    background-color: white;
+    color: #063b88;
 }
 
 
 /* ---------- HERO ---------- */
 
 .hero {
-    min-height: 80vh;
+    min-height: 85vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    padding: 0 10%;
+    padding: 0 8%;
 
-    background-color: #222;
+    background-color: #063b88;
     color: white;
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 68px;
     margin-bottom: 5px;
 }
 
 .hero h2 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: normal;
     margin-top: 0;
 }
@@ -77,33 +96,39 @@ nav h2 {
 }
 
 
-/* ---------- BUTTON ---------- */
+/* ---------- MAIN BUTTON ---------- */
 
 .button {
     display: inline-block;
     width: fit-content;
 
-    margin-top: 20px;
-    padding: 12px 25px;
+    margin-top: 25px;
+    padding: 14px 28px;
 
     background-color: white;
-    color: #222;
+    color: #063b88;
 
     text-decoration: none;
     font-weight: bold;
 
-    border-radius: 5px;
+    border-radius: 10px;
+
+    transition: 0.2s;
 }
 
 .button:hover {
-    background-color: #ddd;
+    background-color: #e6e6e6;
+    transform: translateY(-2px);
 }
 
 
 /* ---------- SECTIONS ---------- */
 
 section {
-    padding: 80px 10%;
+    padding: 80px 8%;
+
+    background-color: white;
+    color: #222;
 }
 
 section h2 {
@@ -114,7 +139,7 @@ section h2 {
 /* ---------- PROJECTS ---------- */
 
 #projects {
-    background-color: white;
+    background-color: #f4f6f8;
 }
 
 .project-grid {
@@ -129,11 +154,13 @@ section h2 {
 .project-card {
     padding: 25px;
 
-    background-color: #f5f5f5;
+    background-color: white;
 
-    border-radius: 8px;
+    border-radius: 12px;
 
-    transition: transform 0.2s;
+    border: 1px solid #ddd;
+
+    transition: 0.2s;
 }
 
 .project-card:hover {
@@ -155,8 +182,13 @@ section h2 {
 
 /* ---------- CONTACT ---------- */
 
+#contact {
+    background-color: #063b88;
+    color: white;
+}
+
 #contact a {
-    color: #222;
+    color: white;
 }
 
 
@@ -164,9 +196,10 @@ section h2 {
 
 footer {
     text-align: center;
+
     padding: 30px;
 
-    background-color: #222;
+    background-color: #042b63;
     color: white;
 }
 
@@ -179,8 +212,17 @@ footer {
         font-size: 42px;
     }
 
+    .hero h2 {
+        font-size: 24px;
+    }
+
     .nav-links {
-        display: none;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 8px 10px;
+        font-size: 14px;
     }
 
 }
