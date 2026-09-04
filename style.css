@@ -95,7 +95,14 @@ nav h2 {
     line-height: 1.6;
 }
 .hero-text {
+    display: flex;
+    flex-direction: column;
     max-width: 700px;
+}
+
+.button {
+    align-self: flex-start;
+    width: fit-content;
 }
 
 .profile-photo {
