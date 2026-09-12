@@ -203,6 +203,31 @@ section h2 {
     font-weight: bold;
 }
 
+/* Checkweight card layout */
+.checkweight-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.checkweight-images {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.checkweight-circuit,
+.checkweight-photo {
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 
 /* ---------- CONTACT ---------- */
 
@@ -280,5 +305,20 @@ footer {
     width: 180px;
     height: 180px;
     margin-bottom: 16px;
+  }
+
+  .checkweight-card {
+    flex-direction: column;
+  }
+
+  .checkweight-images {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .checkweight-circuit,
+  .checkweight-photo {
+    width: 100%;
+    height: auto;
   }
 }
